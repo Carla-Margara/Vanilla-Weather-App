@@ -15,8 +15,64 @@
   </head>
   <body>
     <div class="container">
-      <h1>Hello World!</h1>
-      <a href="" class="btn btn-primary">Click me</a>
+      <div class="card">
+        <div class="card-header">
+          <div class="search-city">
+            <div class="card">
+              <nav class="navbar navbar-light bg-light">
+                <div class="container-fluid">
+                  <form class="d-flex" id="search-form">
+                    <input
+                      class="form-control me-2"
+                      type="search"
+                      placeholder="🔎 Find Location"
+                      aria-label="Search"
+                      id="city-text-input"
+                    />
+                    <button
+                      class="btn btn-outline-secondary me-2"
+                      type="submit"
+                      id="search-city"
+                    >
+                      Search
+                    </button>
+                    <button
+                      class="btn btn-outline-primary"
+                      type="submit"
+                      id="search-current"
+                    >
+                      Current
+                    </button>
+                  </form>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-body bg-transparent">
+          <blockquote class="blockquote mb-0">
+            <h1>Madrid</h1>
+            <footer class="blockquote-footer">
+              ...
+              <cite title="Source Title"
+                ><h6 id="repository-link">
+                  <small class="text-muted"
+                    >Hosted with
+                    <a href="https://www.netlify.com">Netlify</a> </small
+                  >|
+                  <small>
+                    <a href="https://github.com/Carla-Margara/My-Weather-App"
+                      >Open-Source Code</a
+                    >
+                    by Carla Margara</small
+                  >
+                </h6></cite
+              >
+            </footer>
+          </blockquote>
+        </div>
+      </div>
     </div>
     <script src="src/app.js"></script>
   </body>
