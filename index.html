@@ -30,14 +30,14 @@
                       id="city-text-input"
                     />
                     <button
-                      class="btn btn-outline-secondary me-2"
+                      class="btn btn-outline-info me-2"
                       type="submit"
                       id="search-city"
                     >
                       Search
                     </button>
                     <button
-                      class="btn btn-outline-primary"
+                      class="btn btn-outline-warning"
                       type="submit"
                       id="search-current"
                     >
@@ -50,27 +50,54 @@
           </div>
         </div>
 
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h2 class="card-title">Madrid</h2>
+                <div class="card-text">
+                  <h1>32 ℃ |℉</h1>
+                  <h6>Real Feel 30 ℃ |℉</h6>
+                  <h4>Forecast</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <span class="text-muted" id="day-today"> Thursday </span>
+                <h3 class="time" id="now">19:33</h3>
+                <h5 class="card-title">Stats</h5>
+                <p class="card-text">
+                  Wind Speed: 10km
+                  <br />
+                  Precipitation: 30%
+                  <br />
+                  Humidity: 60%
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="card-body bg-transparent">
-          <blockquote class="blockquote mb-0">
-            <h1>Madrid</h1>
-            <footer class="blockquote-footer">
-              ...
-              <cite title="Source Title"
-                ><h6 id="repository-link">
-                  <small class="text-muted"
-                    >Hosted with
-                    <a href="https://www.netlify.com">Netlify</a> </small
-                  >|
-                  <small>
-                    <a href="https://github.com/Carla-Margara/My-Weather-App"
-                      >Open-Source Code</a
-                    >
-                    by Carla Margara</small
+          <block class="block mb-0">
+            <footer class="block-footer">
+              <p id="repository-link">
+                <small class="text-muted"
+                  >Hosted with
+                  <a href="https://www.netlify.com">Netlify</a> </small
+                >|
+                <small>
+                  <a href="https://github.com/Carla-Margara/My-Weather-App"
+                    >Open-Source Code</a
                   >
-                </h6></cite
-              >
+                  by Carla Margara</small
+                >
+              </p>
             </footer>
-          </blockquote>
+          </block>
         </div>
       </div>
     </div>
