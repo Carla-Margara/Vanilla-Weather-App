@@ -12,6 +12,10 @@
       crossorigin="anonymous"
     />
     <title>Vanilla Weather App</title>
+    <script
+      src="https://kit.fontawesome.com/2236a6e25f.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="container">
@@ -52,19 +56,19 @@
 
         <div class="row">
           <div class="col-sm-6">
-            <div class="card">
+            <div class="card" id="weather-now">
               <div class="card-body">
                 <h2 class="card-title">Madrid</h2>
                 <div class="card-text">
                   <h1>32 ℃ |℉</h1>
-                  <h6>Real Feel 30 ℃ |℉</h6>
+                  <h6>Real Feel 30</h6>
                   <h4>Forecast</h4>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-sm-6">
-            <div class="card">
+            <div class="card" id="stats">
               <div class="card-body">
                 <span class="text-muted" id="day-today"> Thursday </span>
                 <h3 class="time" id="now">19:33</h3>
@@ -88,7 +92,7 @@
             <div class="col-sm-2">
               <div class="card">
                 <div class="card-body">
-                  <h5 class="card-title">THU</h5>
+                  <h5 class="card-title">FRI</h5>
                   <p class="card-text">
                     <i class="fas fa-cloud-showers-heavy sun-rain-icon"></i> 20
                     ℃ <br /><i class="far fa-moon wax-moon-icon"></i> 16 ℃
@@ -100,7 +104,7 @@
             <div class="col-sm-2">
               <div class="card">
                 <div class="card-body">
-                  <h5 class="card-title">FRI</h5>
+                  <h5 class="card-title">SAT</h5>
                   <p class="card-text">
                     <i class="fas fa-sun sun-icon"></i> 18 ℃ <br /><i
                       class="fas fa-cloud-moon cloud-moon-icon"
@@ -114,7 +118,7 @@
             <div class="col-sm-2">
               <div class="card">
                 <div class="card-body">
-                  <h5 class="card-title">SAT</h5>
+                  <h5 class="card-title">SUN</h5>
                   <p class="card-text">
                     <i class="fas fa-cloud-rain sun-rain-icon"></i> 16 ℃
                     <br /><i class="far fa-moon wax-moon-icon"></i>
@@ -127,7 +131,7 @@
             <div class="col-sm-2">
               <div class="card">
                 <div class="card-body">
-                  <h5 class="card-title">SUN</h5>
+                  <h5 class="card-title">MON</h5>
                   <p class="card-text">
                     <i class="fas fa-bolt bolt-icon"></i> 15 ℃ <br /><i
                       class="fas fa-cloud-moon cloud-moon-icon"
@@ -141,7 +145,7 @@
             <div class="col-sm-2">
               <div class="card">
                 <div class="card-body">
-                  <h5 class="card-title">MON</h5>
+                  <h5 class="card-title">TUE</h5>
                   <p class="card-text">
                     <i class="fas fa-sun sun-icon"></i> 17 ℃ <br />
                     <i class="fas fa-cloud-moon-rain cloud-moon-icon"></i> 12 ℃
@@ -153,7 +157,7 @@
             <div class="col-sm-2">
               <div class="card">
                 <div class="card-body">
-                  <h5 class="card-title">TUE</h5>
+                  <h5 class="card-title">WED</h5>
                   <p class="card-text">
                     <i class="fas fa-cloud-sun-rain sun-rain-icon"></i> 19 ℃
                     <br />

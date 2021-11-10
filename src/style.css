@@ -1,12 +1,23 @@
 body {
-  display: block;
-  margin: 0 auto;
-  max-width: 750px;
-  margin-top: 2%;
   background: linear-gradient(-225deg, #fffeff 0%, #d7fffe 100%);
 }
 
+.search-city {
+  display: block;
+  margin: 15px auto;
+  max-width: 800px;
+  margin-top: 2%;
+}
 .d-flex {
   position: relative;
   width: 780px;
+}
+
+.nextfive-days {
+  display: inline-block;
+  text-align: center;
+}
+.repository-link {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
 }
