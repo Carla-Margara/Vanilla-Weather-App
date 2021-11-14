@@ -55,30 +55,45 @@
         </div>
 
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-sm-7">
             <div class="card" id="weather-now">
               <div class="card-body">
-                <h2 class="card-title">Madrid</h2>
-                <div class="card-text">
-                  <h1>32 ℃ |℉</h1>
-                  <h6>Real Feel 30</h6>
-                  <h4>Forecast</h4>
+                <h2 class="city-name text-muted" id="location">Madrid</h2>
+                <div class="main-temperature">
+                  <h1 class="temperature" id="main-temp">
+                    32
+                    <span class="degree-units">
+                      <a href="#" id="cel-link">℃</a> |
+                      <a href="#" id="fah-link">℉</a>
+                    </span>
+                  </h1>
+                  <h6 class="real-feel">
+                    Real Feel
+                    <span class="feel-units" id="feels-like">30 ℃</span>
+                  </h6>
+                  <h4 class="forecast" id="forecast">Weather Description</h4>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-sm-6">
+          <div class="col-sm-5">
             <div class="card" id="stats">
               <div class="card-body">
-                <span class="text-muted" id="day-today"> Thursday </span>
+                <span class="weekday text-muted" id="day-today">
+                  Thursday
+                </span>
                 <h3 class="time" id="now">19:33</h3>
+                <hr />
                 <h5 class="card-title">Stats</h5>
                 <p class="card-text">
-                  Wind Speed: 10km
+                  Wind Speed:
+                  <span class="wind text-muted" id="wind-speed">10km</span>
                   <br />
-                  Precipitation: 30%
+                  Precipitation:
+                  <span class="precipitation text-muted" id="rain">30%</span>
                   <br />
-                  Humidity: 60%
+                  Humidity:
+                  <span class="humidity text-muted" id="humid">60%</span>
                 </p>
               </div>
             </div>
@@ -95,7 +110,7 @@
                   <h5 class="card-title">FRI</h5>
                   <p class="card-text">
                     <i class="fas fa-cloud-showers-heavy sun-rain-icon"></i> 20
-                    ℃ <br /><i class="far fa-moon wax-moon-icon"></i> 16 ℃
+                    ℃ <i class="far fa-moon wax-moon-icon"></i> 16 ℃
                   </p>
                 </div>
               </div>
@@ -106,9 +121,8 @@
                 <div class="card-body">
                   <h5 class="card-title">SAT</h5>
                   <p class="card-text">
-                    <i class="fas fa-sun sun-icon"></i> 18 ℃ <br /><i
-                      class="fas fa-cloud-moon cloud-moon-icon"
-                    ></i>
+                    <i class="fas fa-sun sun-icon"></i> 18 ℃
+                    <i class="fas fa-cloud-moon cloud-moon-icon"></i>
                     13 ℃
                   </p>
                 </div>
@@ -121,7 +135,7 @@
                   <h5 class="card-title">SUN</h5>
                   <p class="card-text">
                     <i class="fas fa-cloud-rain sun-rain-icon"></i> 16 ℃
-                    <br /><i class="far fa-moon wax-moon-icon"></i>
+                    <i class="far fa-moon wax-moon-icon"></i>
                     11 ℃
                   </p>
                 </div>
@@ -133,9 +147,8 @@
                 <div class="card-body">
                   <h5 class="card-title">MON</h5>
                   <p class="card-text">
-                    <i class="fas fa-bolt bolt-icon"></i> 15 ℃ <br /><i
-                      class="fas fa-cloud-moon cloud-moon-icon"
-                    ></i>
+                    <i class="fas fa-bolt bolt-icon"></i> 15 ℃
+                    <i class="fas fa-cloud-moon cloud-moon-icon"></i>
                     9 ℃
                   </p>
                 </div>
@@ -147,7 +160,7 @@
                 <div class="card-body">
                   <h5 class="card-title">TUE</h5>
                   <p class="card-text">
-                    <i class="fas fa-sun sun-icon"></i> 17 ℃ <br />
+                    <i class="fas fa-sun sun-icon"></i> 17 ℃
                     <i class="fas fa-cloud-moon-rain cloud-moon-icon"></i> 12 ℃
                   </p>
                 </div>
@@ -160,7 +173,7 @@
                   <h5 class="card-title">WED</h5>
                   <p class="card-text">
                     <i class="fas fa-cloud-sun-rain sun-rain-icon"></i> 19 ℃
-                    <br />
+
                     <i class="far fa-moon wax-moon-icon"></i> 13 ℃
                   </p>
                 </div>
