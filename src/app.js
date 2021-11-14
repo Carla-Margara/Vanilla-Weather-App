@@ -1,3 +1,32 @@
+let now = new Date();
+
+let dayToday = document.querySelector("#day-today");
+
+let days = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
+console.log(days);
+let day = days[now.getDay()];
+console.log(day);
+dayToday.innerHTML = `${day}`;
+console.log(dayToday.innerHTML);
+
+let h3 = document.querySelector("h3");
+let hours = now.getHours();
+console.log(hours);
+let minutes = now.getMinutes();
+if (minutes < 10) {
+  minutes = `0${minutes}`;
+}
+h3.innerHTML = `${hours}:${minutes}`;
+console.log(h3.innerHTML);
+
 function displayTemperature(response) {
   console.log(response.data);
   let temperatureElement = document.querySelector("#main-temp");
