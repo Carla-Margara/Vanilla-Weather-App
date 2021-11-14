@@ -2,20 +2,73 @@ body {
   background: linear-gradient(-225deg, #fffeff 0%, #d7fffe 100%);
 }
 
+.card {
+  display: block;
+  margin: 0px auto;
+  max-width: 850px;
+  margin-top: 2%;
+}
+
 .search-city {
   display: block;
-  margin: 15px auto;
-  max-width: 800px;
+  margin: 0px auto;
+  max-width: 850px;
   margin-top: 2%;
 }
 .d-flex {
   position: relative;
-  width: 780px;
+  width: 800px;
 }
 
-.nextfive-days {
-  display: inline-block;
+.weather-now {
+  display: block;
+  margin: 0 auto;
+  max-width: 850px;
   text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+.card-body {
+  text-align: center;
+}
+.nextfive-days {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 800px;
+  margin-bottom: 2%;
+}
+.card-title {
+  font-weight: bold;
+  text-align: center;
+  color: #0c2233;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.card-text {
+  text-align: center;
+  font-size: 18px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+}
+.sun-icon {
+  font-size: 22px;
+  color: goldenrod;
+}
+.sun-rain-icon {
+  font-size: 30;
+  color: rgb(99, 99, 99);
+}
+.bolt-icon {
+  font-size: 22px;
+  color: rgba(218, 215, 42, 0.89);
+}
+.cloud-moon-icon {
+  font-size: 24px;
+}
+.wax-moon-icon {
+  font-size: 22px;
 }
 .repository-link {
   font-family: "Courier New", Courier, monospace;
