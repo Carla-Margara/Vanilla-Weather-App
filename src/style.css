@@ -27,6 +27,47 @@ body {
   text-align: center;
 }
 
+.city-name {
+  color: #0d84b3;
+  font-size: 45px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+}
+.temperature {
+  color: #0c2233;
+  font-size: 80px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  font-style: italic;
+}
+.degree-units {
+  color: #0c2233;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+  top: -40px;
+}
+
+.forecast {
+  color: #20bcd8;
+  text-shadow: rgb(39, 39, 39);
+}
+.real-feel {
+  font-size: 25px;
+  color: #0c2233;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.feel-units {
+  font-size: 24px;
+  color: #0c2233;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  position: relative;
+  bottom: 5px;
+  font-weight: bold;
+}
+
+.weekday {
+  font-size: 30px;
+}
+
 h3 {
   text-align: center;
 }
