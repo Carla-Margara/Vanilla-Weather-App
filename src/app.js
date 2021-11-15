@@ -11,21 +11,19 @@ let days = [
   "Friday",
   "Saturday",
 ];
-console.log(days);
+
 let day = days[now.getDay()];
-console.log(day);
+
 dayToday.innerHTML = `${day}`;
-console.log(dayToday.innerHTML);
 
 let h3 = document.querySelector("h3");
 let hours = now.getHours();
-console.log(hours);
+
 let minutes = now.getMinutes();
 if (minutes < 10) {
   minutes = `0${minutes}`;
 }
 h3.innerHTML = `${hours}:${minutes}`;
-console.log(h3.innerHTML);
 
 function displayTemperature(response) {
   console.log(response.data);
@@ -43,10 +41,15 @@ function displayTemperature(response) {
   pressureElement.innerHTML = Math.round(response.data.main.pressure);
   let windElement = document.querySelector("#wind-speed");
   windElement.innerHTML = Math.round(response.data.wind.speed);
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 let apiKey = "49edb86f4dbb0fed36d61d387d46af7e";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Arecibo&appid=${apiKey}&units=metric`;
-console.log(apiUrl);
+let city = "Madrid";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
 axios.get(apiUrl).then(displayTemperature);
