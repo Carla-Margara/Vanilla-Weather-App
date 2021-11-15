@@ -30,9 +30,10 @@
                     <input
                       class="form-control me-2"
                       type="search"
-                      placeholder="🔎 Find Location"
+                      placeholder="Search Location"
                       aria-label="Search"
                       id="city-text-input"
+                      autocomplete="off"
                     />
                     <button
                       class="btn btn-outline-info me-2"
@@ -56,7 +57,7 @@
         </div>
 
         <div class="row">
-          <div class="col-sm-8">
+          <div class="col-8">
             <div class="card" id="weather-now">
               <div class="card-body">
                 <h2 class="city-name text-muted" id="location">Madrid</h2>
@@ -79,7 +80,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-4">
+          <div class="col-4">
             <div class="card" id="stats">
               <div class="card-body">
                 <p class="weekday text-muted" id="day-today">Thursday</p>
@@ -88,13 +89,13 @@
                 <h5 class="card-title fw-bold">Stats</h5>
                 <p class="card-text">
                   Wind Speed:
-                  <span class="wind text-muted" id="wind-speed">10</span>km/h
+                  <span class="wind text-muted" id="wind-speed">10</span> km/h
                   <br />
                   Pressure:
-                  <span class="pressure text-muted" id="pressure">30</span>%
+                  <span class="pressure text-muted" id="pressure">30</span> %
                   <br />
                   Humidity:
-                  <span class="humidity text-muted" id="humid">60</span>%
+                  <span class="humidity text-muted" id="humid">60</span> %
                 </p>
               </div>
             </div>
