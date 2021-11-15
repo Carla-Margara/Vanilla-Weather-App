@@ -32,17 +32,38 @@ body {
   font-size: 50px;
   font-family: monospace;
 }
-.temperature {
+
+.degree-units {
+  text-decoration: none;
+}
+.weather-temperature img {
+  margin-right: 5px;
+  height: 64px;
+  width: 64px;
+}
+
+.main-temp {
   color: #0c2233;
   font-size: 80px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  line-height: 1;
 }
-.degree-units {
+.main-temp .degree-units {
   color: #0c2233;
   font-size: 20px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   position: relative;
-  top: -40px;
+  top: -34px;
+}
+
+.weather-temperature .active {
+  color: rbg(33, 33, 33);
+  cursor: default;
+  text-decoration: none;
+}
+.weather-temperature .active:hover {
+  text-decoration: none;
+  color: black;
 }
 
 .forecast {

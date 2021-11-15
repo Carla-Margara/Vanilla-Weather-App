@@ -23,69 +23,68 @@
       <div class="card">
         <div class="card-header">
           <div class="search-city">
-            <div class="card">
-              <nav class="navbar navbar-light bg-light">
-                <div class="container-fluid">
-                  <form class="d-flex" id="search-form">
-                    <input
-                      class="form-control me-2"
-                      type="search"
-                      placeholder="Search Location"
-                      aria-label="Search"
-                      id="city-text-input"
-                      autocomplete="off"
-                    />
-                    <button
-                      class="btn btn-outline-info me-2"
-                      type="submit"
-                      id="search-city"
-                    >
-                      Search
-                    </button>
-                    <button
-                      class="btn btn-outline-warning"
-                      type="submit"
-                      id="search-current"
-                    >
-                      Current
-                    </button>
-                  </form>
-                </div>
-              </nav>
-            </div>
+            <nav class="navbar navbar-light bg-light">
+              <div class="container-fluid">
+                <form class="d-flex" id="search-form">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search Location"
+                    aria-label="Search"
+                    id="city-text-input"
+                    autocomplete="off"
+                  />
+                  <button
+                    class="btn btn-outline-info me-2"
+                    type="submit"
+                    id="search-city"
+                  >
+                    Search
+                  </button>
+                </form>
+              </div>
+            </nav>
           </div>
         </div>
 
-        <div class="row">
+        <div class="row" id="weather-now">
           <div class="col-8">
-            <div class="card" id="weather-now">
-              <div class="card-body">
-                <h2 class="city-name text-muted" id="location">Madrid</h2>
-                <div class="clearfix weather-temperature">
-                  <img src="" alt="clear" class="float-left" id="icon" />
-                </div>
-                <div class="main-temperature">
-                  <h1 class="temperature" id="main-temp">32</h1>
-                  <span class="degree-units">
-                    ℃ |
-                    <a href="#" id="fah-link">℉</a>
-                  </span>
+            <div class="card-body">
+              <h2 class="city-name text-muted" id="location">Madrid</h2>
 
-                  <h6 class="real-feel">
-                    Real Feel
-                    <span class="feel-units" id="feels-like">30 </span>℃
-                  </h6>
-                  <h4 class="forecast" id="forecast">Weather Description</h4>
+              <div class="row">
+                <div class="col-6">
+                  <div class="clearfix weather-temperature">
+                    <img src="" alt="Clear" class="float-left" id="icon" />
+
+                    <div class="float-left" id="main-temperature">
+                      <h1 class="temperature" id="main-temp"></h1>
+
+                      <span class="degree-units">
+                        <a href="#" id="celsius-link" class="active">℃</a> |
+                        <a href="#" id="fahrenheit-link">℉</a>
+                      </span>
+                    </div>
+                  </div>
                 </div>
+
+                <h6 class="real-feel">
+                  Real Feel
+                  <span class="feel-units" id="feels-like">30 </span>℃
+                </h6>
+                <h4 class="forecast" id="forecast">Weather Description</h4>
               </div>
             </div>
           </div>
-          <div class="col-4">
-            <div class="card" id="stats">
-              <div class="card-body">
-                <p class="weekday text-muted" id="day-today">Thursday</p>
-                <h3 class="time fw-bold" id="now">19:33</h3>
-                <hr />
+
+          <div class="col-4" id="stats">
+            <div class="card-body">
+              <p class="weekday text-muted" id="day-today">Thursday</p>
+              <h3 class="time fw-bold" id="now">19:33</h3>
+              <br />
+              <br />
+              <div class="card">
+                <br />
                 <h5 class="card-title fw-bold">Stats</h5>
                 <p class="card-text">
                   Wind Speed:
@@ -97,92 +96,83 @@
                   Humidity:
                   <span class="humidity text-muted" id="humid">60</span> %
                 </p>
+                <br />
               </div>
             </div>
           </div>
         </div>
 
         <br />
+        <hr />
 
         <div class="nextfive-days">
           <div class="row">
             <div class="col-sm-2">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title text-muted">FRI</h5>
-                  <p class="card-text">
-                    <i class="fas fa-cloud-showers-heavy sun-rain-icon"></i> 20
-                    ℃ <i class="far fa-moon wax-moon-icon"></i> 16 ℃
-                  </p>
-                </div>
+              <div class="card-body">
+                <h5 class="card-title text-muted">FRI</h5>
+                <p class="card-text">
+                  <i class="fas fa-cloud-showers-heavy sun-rain-icon"></i> 20 ℃
+                  <i class="far fa-moon wax-moon-icon"></i> 16 ℃
+                </p>
               </div>
             </div>
 
             <div class="col-sm-2">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title text-muted">SAT</h5>
-                  <p class="card-text">
-                    <i class="fas fa-sun sun-icon"></i> 18 ℃
-                    <i class="fas fa-cloud-moon cloud-moon-icon"></i>
-                    13 ℃
-                  </p>
-                </div>
+              <div class="card-body">
+                <h5 class="card-title text-muted">SAT</h5>
+                <p class="card-text">
+                  <i class="fas fa-sun sun-icon"></i> 18 ℃
+                  <i class="fas fa-cloud-moon cloud-moon-icon"></i>
+                  13 ℃
+                </p>
               </div>
             </div>
 
             <div class="col-sm-2">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title text-muted">SUN</h5>
-                  <p class="card-text">
-                    <i class="fas fa-cloud-rain sun-rain-icon"></i> 16 ℃
-                    <i class="far fa-moon wax-moon-icon"></i>
-                    11 ℃
-                  </p>
-                </div>
+              <div class="card-body">
+                <h5 class="card-title text-muted">SUN</h5>
+                <p class="card-text">
+                  <i class="fas fa-cloud-rain sun-rain-icon"></i> 16 ℃
+                  <i class="far fa-moon wax-moon-icon"></i>
+                  11 ℃
+                </p>
               </div>
             </div>
 
             <div class="col-sm-2">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title text-muted">MON</h5>
-                  <p class="card-text">
-                    <i class="fas fa-bolt bolt-icon"></i> 15 ℃
-                    <i class="fas fa-cloud-moon cloud-moon-icon"></i>
-                    9 ℃
-                  </p>
-                </div>
+              <div class="card-body">
+                <h5 class="card-title text-muted">MON</h5>
+                <p class="card-text">
+                  <i class="fas fa-bolt bolt-icon"></i> 15 ℃
+                  <i class="fas fa-cloud-moon cloud-moon-icon"></i>
+                  9 ℃
+                </p>
               </div>
             </div>
 
             <div class="col-sm-2">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title text-muted">TUE</h5>
-                  <p class="card-text">
-                    <i class="fas fa-sun sun-icon"></i> 17 ℃
-                    <i class="fas fa-cloud-moon-rain cloud-moon-icon"></i> 12 ℃
-                  </p>
-                </div>
+              <div class="card-body">
+                <h5 class="card-title text-muted">TUE</h5>
+                <p class="card-text">
+                  <i class="fas fa-sun sun-icon"></i> 17 ℃
+                  <i class="fas fa-cloud-moon-rain cloud-moon-icon"></i> 12 ℃
+                </p>
               </div>
             </div>
 
             <div class="col-sm-2">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title text-muted">WED</h5>
-                  <p class="card-text">
-                    <i class="fas fa-cloud-sun-rain sun-rain-icon"></i> 19 ℃
+              <div class="card-body">
+                <h5 class="card-title text-muted">WED</h5>
+                <p class="card-text">
+                  <i class="fas fa-cloud-sun-rain sun-rain-icon"></i> 19 ℃
 
-                    <i class="far fa-moon wax-moon-icon"></i> 13 ℃
-                  </p>
-                </div>
+                  <i class="far fa-moon wax-moon-icon"></i> 13 ℃
+                </p>
               </div>
             </div>
           </div>
         </div>
+        <hr />
 
         <div class="card-body bg-transparent">
           <block class="block mb-0">
