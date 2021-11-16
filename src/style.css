@@ -5,7 +5,7 @@ body {
 .card {
   display: block;
   margin: 0px auto;
-  max-width: 850px;
+  max-width: 800px;
   margin-top: 2%;
   margin-bottom: 2%;
 }
@@ -13,7 +13,7 @@ body {
 .search-city {
   display: block;
   margin: 0px auto;
-  max-width: 850px;
+  max-width: 800px;
   margin-top: 2%;
 }
 .d-flex {
@@ -24,13 +24,13 @@ body {
 .weather-now {
   display: block;
   margin: 0 auto;
-  max-width: 850px;
+  max-width: 800px;
   text-align: center;
 }
 
 .city-name {
-  font-size: 40px;
-  font-family: monospace;
+  font-size: 50px;
+  font-family: serif;
 }
 
 .degree-units {
@@ -73,6 +73,7 @@ body {
 .forecast {
   color: #20bcd8;
   text-shadow: rgb(39, 39, 39);
+  font-size: 30px;
   font-family: monospace;
   text-transform: capitalize;
 }
@@ -92,7 +93,7 @@ body {
 
 .weekday {
   font-size: 30px;
-  font-family: monospace;
+  font-family: Georgia, Times, "Times New Roman", serif;
 }
 
 h3 {
@@ -118,29 +119,16 @@ h3 {
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 18px;
 }
-.card-text {
+.nextfive-temp {
   text-align: center;
   font-size: 18px;
   font-family: Georgia, Times, "Times New Roman", serif;
 }
-.sun-icon {
-  font-size: 22px;
-  color: goldenrod;
+.nextfive-days-temp-min {
+  text-align: center;
+  opacity: 0.5;
 }
-.sun-rain-icon {
-  font-size: 30;
-  color: rgb(99, 99, 99);
-}
-.bolt-icon {
-  font-size: 22px;
-  color: rgba(218, 215, 42, 0.89);
-}
-.cloud-moon-icon {
-  font-size: 24px;
-}
-.wax-moon-icon {
-  font-size: 22px;
-}
+
 .repository-link {
   font-family: "Courier New", Courier, monospace;
   text-align: center;
