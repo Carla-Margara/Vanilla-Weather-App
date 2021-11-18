@@ -90,6 +90,10 @@ body {
   bottom: 5px;
   font-weight: bold;
 }
+.humid .pressure .wind-speed {
+  color: black;
+  font-weight: bold;
+}
 
 .weekday {
   font-size: 30px;
