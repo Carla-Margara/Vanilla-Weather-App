@@ -25,6 +25,35 @@ if (minutes < 10) {
 }
 h3.innerHTML = `${hours}:${minutes}`;
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#nextfive-forecast");
+  let forecastHTML = `<div class="nextfive-days><div class="nextfive-days" id="nextfive-forecast"> <div class="row">`;
+  let days = ["Fri", "Sat", "Sun", "Mon", "Tue", "Wed"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+      <div class="col-sm-2">
+      <div class="card-body">
+        <h5 class="card-title text-muted">${day}</h5>
+        <img
+          src="http://openweathermap.org/img/wn/04d@2x.png"
+          alt=""
+          width="46"
+        />
+        <div class="nextfive-temp">
+          <span class="nextfive-days-temp-max"> 18° </span>
+          <span class="nextfive-days-temp-min"> 13° </span>
+        </div>
+          </div>
+      </div>
+    
+  `;
+  });
+  forecastHTML = forecastHTML + `</div> </div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function displayTemperature(response) {
   console.log(response.data);
   let temperatureElement = document.querySelector("#main-temp");
@@ -89,3 +118,4 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("Madrid");
+displayForecast();
