@@ -66,11 +66,10 @@
                 </div>
 
                 <br />
-                <h6 class="real-feel">
-                  Real Feel
-                  <span class="feel-units" id="feels-like">30 </span>°
-                </h6>
-                <h4 class="forecast" id="forecast">Weather Description</h4>
+
+                <h4 class="description" id="description">
+                  Weather Description
+                </h4>
               </div>
             </div>
           </div>
@@ -91,9 +90,6 @@
                   <span class="stats text-muted">Wind Speed:</span>
                   <span class="wind fw-bold" id="wind-speed">10</span> km/h
                   <br />
-                  <span class="stats text-muted">Pressure:</span>
-                  <span class="pressure fw-bold" id="pressure">30</span> %
-                  <br />
                   <span class="stats text-muted">Humidity:</span>
                   <span class="humidity fw-bold" id="humid">60</span> %
                 </p>
@@ -105,24 +101,9 @@
 
         <hr />
 
-        <div class="nextfive-days" id="nextfive-forecast">
-          <div class="row">
-            <div class="col-sm-2">
-              <div class="card-title text-muted">Fri</div>
-              <img
-                src="http://openweathermap.org/img/wn/04d@2x.png"
-                alt=""
-                width="46"
-              />
-              <div class="nextfive-temp">
-                <span class="nextfive-days-temp-max"> 18° </span>
-                <span class="nextfive-days-temp-min"> 13° </span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr />
+        <div class="nextfive-days" id="forecast"></div>
 
+        <hr />
         <div class="card-body bg-transparent">
           <block class="block mb-0">
             <footer class="block-footer">

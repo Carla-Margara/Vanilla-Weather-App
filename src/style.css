@@ -5,7 +5,7 @@ body {
 .card {
   display: block;
   margin: 0px auto;
-  max-width: 800px;
+  max-width: 600px;
   margin-top: 2%;
   margin-bottom: 2%;
 }
@@ -13,18 +13,18 @@ body {
 .search-city {
   display: block;
   margin: 0px auto;
-  max-width: 800px;
+  max-width: 600px;
   margin-top: 2%;
 }
 .d-flex {
   position: relative;
-  width: 800px;
+  width: 600px;
 }
 
 .weather-now {
   display: block;
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 600px;
   text-align: center;
 }
 
@@ -70,27 +70,15 @@ body {
   text-decoration: none;
 }
 
-.forecast {
+.description {
   color: #20bcd8;
   text-shadow: rgb(39, 39, 39);
   font-size: 30px;
   font-family: monospace;
   text-transform: capitalize;
 }
-.real-feel {
-  font-size: 18px;
-  color: #0c2233;
-  font-family: Georgia, Times, "Times New Roman", serif;
-}
-.feel-units {
-  font-size: 20px;
-  color: #0c2233;
-  font-family: Georgia, Times, "Times New Roman", serif;
-  position: relative;
-  bottom: 5px;
-  font-weight: bold;
-}
-.humid .pressure .wind-speed {
+
+.humid .wind-speed {
   color: black;
   font-weight: bold;
 }
@@ -107,33 +95,30 @@ h3 {
 
 .card-body {
   text-align: center;
-  max-width: 800px;
+  max-width: 600px;
   max-height: 700px;
 }
 .nextfive-days {
   display: block;
-  text-align: center;
   margin: 0 auto;
-  max-width: 800px;
+  text-align: center;
+  max-width: 600px;
   margin-bottom: 2%;
 }
-.card-title {
-  text-align: center;
+.forecast {
   color: #0c2233;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 18px;
 }
-.nextfive-temp {
-  text-align: center;
+.nextfive-forecast-temperatures {
   font-size: 18px;
   font-family: Georgia, Times, "Times New Roman", serif;
-}
-.nextfive-days-temp-min {
   text-align: center;
+}
+.nextfive-forecast-temperatures-min {
   opacity: 0.5;
 }
 
 .repository-link {
   font-family: "Courier New", Courier, monospace;
-  text-align: center;
 }
