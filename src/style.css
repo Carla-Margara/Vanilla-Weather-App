@@ -101,6 +101,7 @@ h3 {
 .nextfive-days {
   display: block;
   margin: 0 auto;
+  text-align: center;
   max-width: 700px;
   margin-bottom: 2%;
 }

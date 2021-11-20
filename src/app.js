@@ -62,7 +62,7 @@ function displayForecast(response) {
           <span class="nextfive-forecast-temperatures-max"> ${Math.round(
             forecastDay.temp.max
           )}° </span>
-          <br/>
+        
           <span class="nextfive-forecast-temperatures-min"> ${Math.round(
             forecastDay.temp.min
           )}° </span>
