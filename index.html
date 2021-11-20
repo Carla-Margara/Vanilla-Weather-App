@@ -48,7 +48,7 @@
         </div>
 
         <div class="row" id="weather-now">
-          <div class="col-8">
+          <div class="col-sm-7">
             <div class="card-body">
               <br />
               <h2 class="city-name text-muted" id="location">Madrid</h2>
@@ -74,7 +74,7 @@
             </div>
           </div>
 
-          <div class="col-4" id="stats">
+          <div class="col-sm-5" id="stats">
             <div class="card-body">
               <div class="container-fluid">
                 <br />
@@ -85,7 +85,9 @@
               <br />
               <div class="card">
                 <br />
-                <h5 class="card-title fw-bold">Stats</h5>
+                <h5 class="card-title fw-bold" style="text-align: center">
+                  Stats
+                </h5>
                 <p class="card-text">
                   <span class="stats text-muted">Wind Speed:</span>
                   <span class="wind fw-bold" id="wind-speed">10</span> km/h
@@ -101,11 +103,11 @@
 
         <hr />
 
-        <div class="nextfive-days" id="forecast"></div>
+        <div class="nextfive-days" style="width: 38rem" id="forecast"></div>
 
         <hr />
         <div class="card-body bg-transparent">
-          <block class="block mb-0">
+          <block class="block">
             <footer class="block-footer">
               <p id="repository-link">
                 <small class="text-muted"
