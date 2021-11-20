@@ -5,7 +5,7 @@ body {
 .card {
   display: block;
   margin: 0px auto;
-  max-width: 700px;
+  max-width: 650px;
   margin-top: 2%;
   margin-bottom: 2%;
 }
@@ -13,18 +13,18 @@ body {
 .search-city {
   display: block;
   margin: 0px auto;
-  max-width: 700px;
+  max-width: 650px;
   margin-top: 2%;
 }
 .d-flex {
   position: relative;
-  width: 700px;
+  width: 650px;
 }
 
 .weather-now {
   display: block;
   margin: 0 auto;
-  max-width: 700px;
+  max-width: 650px;
   text-align: center;
 }
 
@@ -58,18 +58,6 @@ body {
   text-decoration: none;
 }
 
-.weather-temperature .active {
-  color: rbg(33, 33, 33);
-  cursor: default;
-  text-decoration: none;
-}
-.weather-temperature .active {
-  text-decoration: none;
-  color: black;
-  cursor: default;
-  text-decoration: none;
-}
-
 .description {
   color: #20bcd8;
   text-shadow: rgb(39, 39, 39);
@@ -94,15 +82,18 @@ h3 {
 }
 
 .card-body {
+  display: block;
+  margin: 0 auto;
   text-align: center;
-  max-width: 700px;
-  max-height: 700px;
+  max-width: 650px;
+  max-height: 650px;
 }
 .nextfive-days {
   display: block;
   margin: 0 auto;
+
   text-align: center;
-  max-width: 700px;
+  max-width: 650px;
   margin-bottom: 2%;
 }
 .forecast {
