@@ -34,26 +34,21 @@ body {
 }
 
 .weather-temperature {
-  position: relative;
-  top: -10px;
-  left: 175px;
+  display: block;
+  margin: 0 auto;
 }
 
 .temperature {
   color: #0c2233;
   font-size: 70px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  position: relative;
-  top: -20px;
-  left: 180px;
 }
 .degree-units {
   color: #0c2233;
   font-size: 20px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   position: relative;
-  top: -50px;
-  left: 190px;
+  top: -40px;
 }
 
 .description {
