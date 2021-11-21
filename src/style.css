@@ -5,7 +5,7 @@ body {
 .card {
   display: block;
   margin: 0px auto;
-  max-width: 650px;
+  max-width: 700px;
   margin-top: 2%;
   margin-bottom: 2%;
 }
@@ -13,18 +13,18 @@ body {
 .search-city {
   display: block;
   margin: 0px auto;
-  max-width: 650px;
+  max-width: 700px;
   margin-top: 2%;
 }
 .d-flex {
   position: relative;
-  width: 650px;
+  width: 700px;
 }
 
 .weather-now {
   display: block;
   margin: 0 auto;
-  max-width: 650px;
+  max-width: 700px;
   text-align: center;
 }
 
@@ -33,29 +33,27 @@ body {
   font-family: serif;
 }
 
-.degree-units {
-  text-decoration: none;
-}
-.weather-temperature img {
-  margin-right: 5px;
-  height: 70px;
-  width: 70px;
+.weather-temperature {
+  position: relative;
+  top: -10px;
+  left: 175px;
 }
 
-.main-temp {
+.temperature {
   color: #0c2233;
-  font-size: 90px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  line-height: 1;
+  font-size: 70px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+  top: -20px;
+  left: 180px;
 }
-.main-temp .degree-units {
+.degree-units {
   color: #0c2233;
   font-size: 20px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   position: relative;
-  top: -34px;
-  cursor: default;
-  text-decoration: none;
+  top: -50px;
+  left: 190px;
 }
 
 .description {
@@ -72,28 +70,28 @@ body {
 }
 
 .weekday {
-  font-size: 30px;
+  font-size: 25px;
   font-family: Georgia, Times, "Times New Roman", serif;
 }
 
-h3 {
+.now {
   text-align: center;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 30px;
 }
 
 .card-body {
   display: block;
   margin: 0 auto;
   text-align: center;
-  max-width: 650px;
-  max-height: 650px;
+  max-width: 700px;
+  max-height: 700px;
 }
 .nextfive-days {
   display: block;
   margin: 0 auto;
-
+  margin-top: 6%;
   text-align: center;
-  max-width: 650px;
   margin-bottom: 2%;
 }
 .forecast {

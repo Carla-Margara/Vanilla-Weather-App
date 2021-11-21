@@ -41,13 +41,13 @@ function displayForecast(response) {
 
   let forecastElement = document.querySelector("#forecast");
 
-  let forecastHTML = `<div class="row">`;
+  let forecastHTML = `<ul class="list-group list-group-flush">`;
   forecast.forEach(function (forecastDay, index) {
-    if (index < 6) {
+    if (index < 5) {
       forecastHTML =
         forecastHTML +
         `
-      <div class="col-2">
+      <li class="list-group-item">
       <div class="nextfive-forecast-date text-muted"> ${formatDay(
         forecastDay.dt
       )}</div>
@@ -56,7 +56,7 @@ function displayForecast(response) {
             forecastDay.weather[0].icon
           }@2x.png"
           alt=""
-          width="44"
+          width="46"
         />
         <div class="card-text nextfive-forecast-temperatures">
           <span class="nextfive-forecast-temperatures-max"> ${Math.round(
@@ -66,8 +66,8 @@ function displayForecast(response) {
           <span class="nextfive-forecast-temperatures-min"> ${Math.round(
             forecastDay.temp.min
           )}° </span>
-        </div>
-      </div> 
+        </li>
+      </ul> 
   `;
     }
   });

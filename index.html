@@ -47,44 +47,28 @@
           </div>
         </div>
 
-        <div class="row" id="weather-now">
-          <div class="col-sm-7">
-            <div class="card-body">
-              <br />
-              <h2 class="city-name text-muted" id="location">Madrid</h2>
-
-              <div class="clearfix weather-temperature">
-                <img src="" alt="Clear" class="float-left" id="icon" />
-
-                <div class="float-left" id="main-temperature">
-                  <h1 class="temperature" id="main-temp"></h1>
-
-                  <span class="degree-units"> ℃ </span>
-                </div>
-
+        <div class="row">
+          <div class="col-8">
+            <div class="content" id="weather-now">
+              <div class="card-body">
                 <br />
-
-                <h4 class="description" id="description">
+                <h2 class="city-name text-muted" id="location">Madrid</h2>
+                <br />
+                <h5 class="description" id="description">
                   Weather Description
-                </h4>
+                </h5>
               </div>
-            </div>
-          </div>
 
-          <div class="col-sm-5" id="stats">
-            <div class="card-body">
-              <div class="container-fluid">
-                <br />
-                <br />
-                <p class="weekday text-muted" id="day-today">Thursday</p>
-                <h3 class="time fw-bold" id="now">19:33</h3>
+              <div class="weather-temperature">
+                <img src="" class="weather-icon" id="icon" />
+              </div>
+
+              <div class="main-temperature" id="main-temperature">
+                <span class="temperature" id="main-temp"></span>
+                <span class="degree-units"> ℃ </span>
               </div>
 
               <div class="card-body">
-                <br />
-                <h5 class="card-title fw-bold" style="text-align: center">
-                  Stats
-                </h5>
                 <p class="card-text">
                   <span class="stats text-muted">Wind Speed:</span>
                   <span class="wind fw-bold" id="wind-speed">10</span> km/h
@@ -93,19 +77,22 @@
                   <span class="humidity fw-bold" id="humid">60</span> %
                 </p>
                 <br />
+                <div>
+                  <h4 class="weekday text-muted" id="day-today">Thursday</h4>
+                  <p class="time fw-bold" id="now">19:33</p>
+                </div>
               </div>
             </div>
           </div>
+
+          <div class="col-4">
+            <div
+              class="card nextfive-days"
+              style="width: 10rem"
+              id="forecast"
+            ></div>
+          </div>
         </div>
-
-        <hr />
-
-        <div
-          class="card-body nextfive-days"
-          style="width: 38rem"
-          id="forecast"
-        ></div>
-
         <hr />
         <div class="card-body bg-transparent">
           <block class="block">
